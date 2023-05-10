@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="UnitPU" transaction-type="JTA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <jta-data-source>java:app/UnitPU</jta-data-source>
+        <class>com.olivet.model.Cliente</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <shared-cache-mode>NONE</shared-cache-mode>
+        <validation-mode>NONE</validation-mode>
+
+        <properties>
+        </properties>
+    </persistence-unit>
+
+</persistence>
